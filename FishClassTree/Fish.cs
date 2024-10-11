@@ -6,27 +6,27 @@ using System.Threading.Tasks;
 
 namespace Lab_6_OOP_Inheritance
 {
-    internal class Snake : Animal
+    internal class Fish : Animal
     {
         public string Habitat;
-        public Snake()
+        public Fish()
         {
             NumberOfLegs = 0;
-            PrimaryColour = "Camoflaged to the environment";
-            PrimaryFoodSource = "Frogs";
+            PrimaryColour = "Colourful";
+            PrimaryFoodSource = "Smaller fish or plants";
             NumberOfWings = 0;
             Size = "Small";
-            Habitat = "in rocks and crevices";
+            Habitat = "sea";
         }
 
         public override void MakeSound()
         {
-            Console.WriteLine("The snake hisses.");
+            Console.WriteLine("The fish blubs.");
         }
 
-        public void Hide()
+        public void Move()
         {
-            Console.WriteLine($"The snake hides {Habitat}");
+            Console.WriteLine($"The fish swims in the {Habitat}");
         }
     }
 }

@@ -7,34 +7,27 @@ using System.Threading.Tasks;
 
 namespace Lab_6_OOP_Inheritance
 {
-    internal class Animal
+    public class Animal
     {
         // Klassen ska ha minst fem egenskaper som alla djur delar med varandra.
-        public int NumberOfLegs { get; set; }
-        public required string PrimaryColour { get; set; }
-        public required string PrimaryFoodSource { get; set; }
-        public int NumberOfWings { get; set; }
-        public int Size { get; set; }
-
-        // Det ska finnas en konstruktor som kan användas för att skapa nya djur.
-
-        public Animal()
-        {
-            
-        }
+        public int NumberOfLegs;
+        public string PrimaryColour;
+        public string PrimaryFoodSource;
+        public int NumberOfWings;
+        public string Size;
 
         // Klassen ska också ha minst tre metoder som alla djur delar med varandra.
-        public void MakeSound()
+        public virtual void MakeSound()
         {
-
+            Console.WriteLine("The animal is not declared yet");
         }
-        public void Eat()
+        public static void Eat()
         {
-
+            Console.WriteLine("Nam, nam");
         }
-        public void Sleep()
+        public static void Sleep()
         {
-
+            Console.WriteLine("ZZZzzz... zz.. z..");
         }
 
     }
